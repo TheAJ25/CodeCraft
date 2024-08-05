@@ -1,5 +1,6 @@
 import CodeEditor from "@/components/CodeEditor";
 import HelperHeader from "@/components/HelperHeader";
+import RenderCode from "@/components/RenderCode";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -22,7 +23,7 @@ const Compile = () => {
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={50} minSize={25}>
           <div className="h-[calc(100dvh-60px)] min-w-[350px]]">
-            <span className="font-semibold">Content</span>
+            <RenderCode/>
           </div>
         </ResizablePanel>
       </ResizablePanelGroup>
